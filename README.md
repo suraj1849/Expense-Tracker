@@ -50,8 +50,11 @@ The goal of this project is to develop an Expense Tracker application that helps
 
 ## Usage 🛠️
 Open the application in a web browser.
+
 Use the form to add new transactions by entering the description, amount, date, and type.
+
 View and delete transactions from the history list.
+
 The balance, income, and expenses will update automatically based on your entries.
 
 ## Acknowledgements 🙏
