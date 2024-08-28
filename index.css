@@ -6,27 +6,23 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: rgb(149, 216, 194);
+   background-color: #23231c;
     margin: 0;
     padding: 20px;
     height: 100vh;
-    overflow-y: auto; /* Enable vertical scrolling */
-    background-image: url('src_images/BG.png'); /* Add the background image */
-    background-size: cover; /* Cover the entire body area */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    overflow-y: auto;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.8); /* Make the container slightly transparent */
+    background: rgba(235, 178, 178, 0.8);
     width: 100%;
     max-width: 400px;
     padding: 20px;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Prevent container from expanding beyond the content */
+    overflow: hidden;
 }
 
 h1 {
@@ -69,9 +65,9 @@ h1 {
 
 .transaction-list ul {
     list-style-type: none;
-    max-height: 400px; /* Set a max height for the list */
-    overflow-y: auto; /* Enable scrolling within the transaction list */
-    padding-right: 10px; /* Add some padding to avoid scrollbar overlap */
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
 }
 
 .transaction-list li {
@@ -125,4 +121,49 @@ h1 {
 
 .btn:hover {
     background: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .income-expense {
+        flex-direction: column;
+    }
+
+    .income-expense div {
+        margin-bottom: 20px;
+    }
+
+    .transaction-list ul {
+        max-height: 300px;
+    }
+
+    .form-control input, .form-control select {
+        padding: 8px;
+    }
+
+    .btn {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .balance h3 {
+        font-size: 1.5rem;
+    }
+
+    .money {
+        font-size: 1rem;
+    }
+
+    .transaction-list ul {
+        max-height: 200px;
+    }
+
+    .btn {
+        padding: 6px;
+    }
 }
