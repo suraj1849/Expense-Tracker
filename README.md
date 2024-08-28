@@ -42,3 +42,18 @@ The goal of this project is to develop an Expense Tracker application that helps
 1. Clone the repository:
    ```bash
    git clone https://https://github.com/suraj1849/Expense-Tracker
+   
+2.Navigate into the project directory:
+   cd expense-tracker
+   
+3.Open index.html in a web browser to view the application.
+
+## Usage 🛠️
+Open the application in a web browser.
+Use the form to add new transactions by entering the description, amount, date, and type.
+View and delete transactions from the history list.
+The balance, income, and expenses will update automatically based on your entries.
+
+## Acknowledgements 🙏
+The design and functionality are inspired by various personal finance tools.
+Feel free to adjust the emojis or text as needed!
