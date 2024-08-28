@@ -7,7 +7,11 @@
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(149, 216, 194);
-   background-color: #23231c;
+    background-image: url('src_images/BG.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 20px;
     height: 100vh;
@@ -15,7 +19,7 @@ body {
 }
 
 .container {
-    background: rgba(235, 178, 178, 0.8);
+    background: rgba(174, 218, 223, 0.8);
     width: 100%;
     max-width: 400px;
     padding: 20px;
