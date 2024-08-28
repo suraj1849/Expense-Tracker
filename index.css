@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-image: url('src_images/BG.png'); /* Add the background image */
+    background-size: cover; /* Cover the entire body area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Make the container slightly transparent */
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto; /* Center the container */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevent container from expanding beyond the content */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.balance h2, .income-expense h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.balance h3 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.income-expense {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.money {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.plus {
+    color: #2ecc71;
+}
+
+.minus {
+    color: #e74c3c;
+}
+
+.transaction-list {
+    margin-top: 20px;
+}
+
+.transaction-list ul {
+    list-style-type: none;
+    max-height: 400px; /* Set a max height for the list */
+    overflow-y: auto; /* Enable scrolling within the transaction list */
+    padding-right: 10px; /* Add some padding to avoid scrollbar overlap */
+}
+
+.transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    background: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid;
+    border-radius: 3px;
+}
+
+.transaction-list li.income {
+    border-color: #2ecc71;
+}
+
+.transaction-list li.expense {
+    border-color: #e74c3c;
+}
+
+.add-transaction {
+    margin-top: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input, .form-control select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #555;
+}
